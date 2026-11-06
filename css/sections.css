@@ -185,3 +185,13 @@
 .footer small {
   color: var(--muted);
 }
+
+.poem {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.poem h2 {
+  font-style: normal;
+}
