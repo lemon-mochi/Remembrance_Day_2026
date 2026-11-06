@@ -1,0 +1,36 @@
+/* Design tokens and global styles */
+:root {
+  --bg: #121212;
+  --bg-alt: #1b1b1b;
+  --text: #ece8e1;
+  --muted: #a8a29a;
+  --poppy: #d52b1e;
+  --max-width: 960px;
+  --font-serif: georgia, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
