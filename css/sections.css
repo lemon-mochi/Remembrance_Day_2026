@@ -56,47 +56,6 @@
 }
 
 /* Layout and component styles */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  background: radial-gradient(circle at 50% 40%, #2a1210 0%, var(--bg) 70%);
-  position: relative;
-}
-
-.hero__eyebrow {
-  color: var(--poppy);
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.hero__title {
-  font-size: clamp(2.5rem, 9vw, 6rem);
-}
-
-.hero__date {
-  font-size: 1.25rem;
-  color: var(--muted);
-}
-
-.hero__tagline {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1.5rem;
-  color: var(--poppy);
-}
-
-.hero__scroll {
-  position: absolute;
-  bottom: 2rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
 
 .section {
   padding: 6rem 1.5rem;
@@ -206,26 +165,6 @@
   font-size: 1.2rem;
 }
 
-.checklist {
-  list-style: none;
-  padding: 0;
-  max-width: 640px;
-  margin: 2rem auto 0;
-}
-
-.checklist li {
-  padding: 0.9rem 0 0.9rem 2rem;
-  border-bottom: 1px solid #2a2a2a;
-  position: relative;
-}
-
-.checklist li::before {
-  content: "●";
-  color: var(--poppy);
-  position: absolute;
-  left: 0;
-}
-
 .footer {
   text-align: center;
   padding: 4rem 1.5rem;
@@ -240,16 +179,6 @@
 
 .footer small {
   color: var(--muted);
-}
-
-.poem {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-}
-
-.poem h2, h3 {
-  font-style: normal;
 }
 
 .light-link{
