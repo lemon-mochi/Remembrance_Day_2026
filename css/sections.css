@@ -1,4 +1,60 @@
 
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: min(100% - 2rem, 1100px);
+  margin: 1.25rem auto;
+  padding: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 999px;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 180ms, color 180ms;
+}
+
+.site-nav a:hover {
+  color: var(--poppy);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-nav a.active {
+  color: white;
+  background: var(--poppy);
+}
+
+.site-nav a:focus-visible {
+  outline: 2px solid var(--poppy);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .site-nav {
+    width: calc(100% - 1.5rem);
+    gap: 0.25rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+  }
+
+  .site-nav a {
+    flex: 1 1 auto;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
 /* Layout and component styles */
 .hero {
   min-height: 100vh;
